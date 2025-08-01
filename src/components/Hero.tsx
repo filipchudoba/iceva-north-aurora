@@ -28,12 +28,6 @@ const Hero = () => {
       className="relative min-h-screen overflow-hidden bg-black bg-cover bg-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* Aurora Overlay */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none blur-2xl opacity-50 
-        animate-[aurora-drift_16s_ease-in-out_infinite,aurora-shimmer_6s_ease-in-out_infinite] 
-        bg-[radial-gradient(circle_at_20%_20%,#7dd3fc33_0%,transparent_40%),radial-gradient(circle_at_80%_30%,#a78bfa33_0%,transparent_40%),radial-gradient(circle_at_50%_80%,#f472b633_0%,transparent_50%)]"
-      />
 
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4">
