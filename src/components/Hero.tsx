@@ -37,13 +37,12 @@ const Hero = () => {
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src={icevaLogo} 
               alt="ICEva Logo" 
-              className="h-12 w-12 animate-aurora-pulse"
+              className="h-16 w-auto animate-aurora-pulse"
             />
-            <span className="text-2xl font-bold aurora-text">ICEva</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -93,9 +92,11 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-40 flex items-center justify-center min-h-[calc(100vh-100px)] px-6">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 aurora-text">
-            ICEva
-          </h1>
+          <img 
+            src={icevaLogo} 
+            alt="ICEva Logo" 
+            className="h-32 md:h-48 w-auto mx-auto mb-6 animate-aurora-pulse"
+          />
           <p className="text-2xl md:text-3xl mb-8 text-foreground/90 font-light">
             Cooler Way to Fly
           </p>

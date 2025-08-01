@@ -73,10 +73,6 @@ const Fleet = () => {
                     <h4 className="font-semibold text-primary">{aircraft.model}</h4>
                     <p className="text-sm text-foreground/60">Range: {aircraft.range}</p>
                   </div>
-                  <div className="text-right">
-                    <p className="text-sm text-foreground/60">Capacity</p>
-                    <p className="font-medium">{aircraft.capacity}</p>
-                  </div>
                 </div>
               ))}
             </div>
@@ -100,10 +96,6 @@ const Fleet = () => {
                     <h4 className="font-semibold text-primary">{aircraft.model}</h4>
                     <p className="text-sm text-foreground/60">Range: {aircraft.range}</p>
                   </div>
-                  <div className="text-right">
-                    <p className="text-sm text-foreground/60">Capacity</p>
-                    <p className="font-medium">{aircraft.capacity}</p>
-                  </div>
                 </div>
               ))}
             </div>
@@ -126,10 +118,6 @@ const Fleet = () => {
                   <div>
                     <h4 className="font-semibold text-primary">{aircraft.model}</h4>
                     <p className="text-sm text-foreground/60">Range: {aircraft.range}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm text-foreground/60">Capacity</p>
-                    <p className="font-medium">{aircraft.capacity}</p>
                   </div>
                 </div>
               ))}

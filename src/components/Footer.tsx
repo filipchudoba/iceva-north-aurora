@@ -10,13 +10,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center mb-4">
               <img 
                 src={icevaLogo} 
                 alt="ICEva Logo" 
-                className="h-10 w-10"
+                className="h-12 w-auto"
               />
-              <span className="text-xl font-bold aurora-text">ICEva</span>
             </div>
             <p className="text-foreground/70 leading-relaxed">
               Experience the cooler way to fly with authentic North Atlantic virtual aviation.
