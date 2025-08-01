@@ -70,25 +70,52 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'aurora-drift': {
+					'0%, 100%': { transform: 'translateX(-10px) translateY(-5px) scale(1)' },
+					'25%': { transform: 'translateX(10px) translateY(5px) scale(1.05)' },
+					'50%': { transform: 'translateX(15px) translateY(-10px) scale(0.95)' },
+					'75%': { transform: 'translateX(-5px) translateY(10px) scale(1.02)' }
+				},
+				'aurora-shimmer': {
+					'0%, 100%': { filter: 'hue-rotate(0deg) brightness(1)' },
+					'25%': { filter: 'hue-rotate(15deg) brightness(1.1)' },
+					'50%': { filter: 'hue-rotate(-10deg) brightness(0.9)' },
+					'75%': { filter: 'hue-rotate(20deg) brightness(1.05)' }
+				},
+				'aurora-pulse': {
+					'0%, 100%': { opacity: '0.8', transform: 'scale(1)' },
+					'50%': { opacity: '1', transform: 'scale(1.02)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'aurora-drift': 'aurora-drift 8s ease-in-out infinite',
+				'aurora-shimmer': 'aurora-shimmer 4s ease-in-out infinite',
+				'aurora-pulse': 'aurora-pulse 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'aurora-primary': 'var(--aurora-primary)',
+				'aurora-secondary': 'var(--aurora-secondary)',
+				'aurora-subtle': 'var(--aurora-subtle)',
+				'aurora-glow': 'var(--aurora-glow)'
 			}
 		}
 	},
