@@ -24,15 +24,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Aurora Background */}
-      <div className="absolute inset-0 aurora-bg">
-        <img 
-          src={auroraHero} 
-          alt="Aurora Borealis" 
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/90" />
-      </div>
 
       {/* Navigation */}
       <nav className="relative z-50 px-6 py-4">
@@ -92,11 +83,6 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-40 flex items-center justify-center min-h-[calc(100vh-100px)] px-6">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          <img 
-            src={icevaLogo} 
-            alt="ICEva Logo" 
-            className="h-32 md:h-48 w-auto mx-auto mb-6 animate-aurora-pulse"
-          />
           <p className="text-2xl md:text-3xl mb-8 text-foreground/90 font-light">
             Cooler Way to Fly
           </p>
