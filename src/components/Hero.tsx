@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import auroraHero from '@/assets/aurora-hero.jpg';
-import icevaLogo from '@/assets/iceva-logo-new.png';
+import auroraHero from '@/assets/images/aurora-hero.jpg';
+import icevaLogo from '@/assets/logos/iceva-logo.png';
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

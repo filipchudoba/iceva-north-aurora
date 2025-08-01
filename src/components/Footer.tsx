@@ -1,6 +1,6 @@
 import { ExternalLink, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import icevaLogo from '@/assets/iceva-logo-new.png';
+import icevaLogo from '@/assets/logos/iceva-logo.png';
 
 const Footer = () => {
   return (
