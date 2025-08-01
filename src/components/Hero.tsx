@@ -81,6 +81,11 @@ const Hero = () => {
       </nav>
 
       {/* Hero Content */}
+      {/* Aurora Background */}
+<div
+  className="absolute inset-0 z-0 animate-aurora bg-[radial-gradient(circle_at_20%_20%,#7dd3fc33_0%,transparent_40%),radial-gradient(circle_at_80%_30%,#a78bfa33_0%,transparent_40%),radial-gradient(circle_at_50%_80%,#f472b633_0%,transparent_50%)] blur-2xl opacity-70"
+/>
+
       <div className="relative z-40 flex items-center justify-center min-h-[calc(100vh-100px)] px-6">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <p className="text-2xl md:text-3xl mb-8 text-foreground/90 font-light">
