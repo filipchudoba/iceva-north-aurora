@@ -94,9 +94,10 @@ const Hero = () => {
 
       <div className="relative z-40 flex items-center justify-center min-h-[calc(100vh-100px)] px-6">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          <p className="text-2xl md:text-3xl mb-8 text-foreground/90 font-light">
-            Cooler Way to Fly
-          </p>
+<h2 className="text-2xl md:text-3xl mb-8 text-foreground/90 font-light">
+  Cooler Way to Fly
+</h2>
+
           <p className="text-lg md:text-xl mb-12 text-foreground/70 max-w-2xl mx-auto leading-relaxed">
             Experience the magic of North Atlantic aviation with our VAMSYS-based virtual airline. 
             Explore Iceland, the Faroe Islands, and beyond with realistic operations and stunning routes.
