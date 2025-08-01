@@ -1,15 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import auroraHero from '@/assets/aurora-hero.jpg';
-import icevaLogo from '@/assets/iceva-logo.png';
+import icevaLogo from '@/assets/iceva-logo-new.png';
 
-interface HeroProps {
-  isDark: boolean;
-  toggleTheme: () => void;
-}
-
-const Hero = ({ isDark, toggleTheme }: HeroProps) => {
+const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -62,26 +57,10 @@ const Hero = ({ isDark, toggleTheme }: HeroProps) => {
                 {item.name}
               </button>
             ))}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={toggleTheme}
-              className="aurora-card border-primary/20"
-            >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={toggleTheme}
-              className="aurora-card border-primary/20"
-            >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
+          <div className="md:hidden">
             <Button
               variant="outline"
               size="icon"
@@ -127,9 +106,14 @@ const Hero = ({ isDark, toggleTheme }: HeroProps) => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="aurora-button text-lg px-8 py-4 rounded-lg font-semibold">
+            <a 
+              href="https://vamsys.io/register/iceva"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="aurora-button text-lg px-8 py-4 rounded-lg font-semibold inline-block"
+            >
               Join ICEva Now
-            </button>
+            </a>
             <Button 
               variant="outline" 
               size="lg"
